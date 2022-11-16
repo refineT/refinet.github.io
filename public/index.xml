@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HomePage on </title>
+    <link>https://refinet.github.io/</link>
+    <description>Recent content in HomePage on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Nov 2022 17:41:42 +0800</lastBuildDate><atom:link href="https://refinet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>basics_Second_content</title>
+      <link>https://refinet.github.io/basics/basics-sec-captical/basics_second_content/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/basics-sec-captical/basics_second_content/</guid>
+      <description>basics second content test</description>
+    </item>
+    
+    <item>
+      <title>basics_Second_content2</title>
+      <link>https://refinet.github.io/basics/basics-sec-captical/basics_second_content2/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/basics-sec-captical/basics_second_content2/</guid>
+      <description>basics second content2 test</description>
+    </item>
+    
+    <item>
+      <title>DSO Second_content</title>
+      <link>https://refinet.github.io/projects/dso/dso_second_content/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/projects/dso/dso_second_content/</guid>
+      <description>projects second content test</description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://refinet.github.io/basics/others/others/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/others/others/</guid>
+      <description>Table of Contents Introduction
+Reference links
+Terraform project structure
+SourceCode
+RootModule ChildModule Terraform module deployment
+(tes1)
+test2
+Mercury
+Venus
+Earth (Orbit/Moon)
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Comet Haley
+Task Time required Assigned to Current Status Finished Calendar Cache &amp;gt; 5 hours in progress - [x] ok? Object Cache &amp;gt; 5 hours in progress [x] item1[ ] item2 Object Cache &amp;gt; 5 hours in progress - [x] item1- [ ] item2 Object Cache &amp;gt; 5 hours in progress [x] item1[ ] item2 works</description>
+    </item>
+    
+    <item>
+      <title>Terraform IaC</title>
+      <link>https://refinet.github.io/basics/terraform/iac/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/terraform/iac/</guid>
+      <description>Table of Contents Introduction Reference links Terraform project structure SourceCode RootModule ChildModule Terraform module deployment Introduction Terraform is an open-source, infrastructure as code, software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
+terraform init: Download and install Terraform plugins and remote modules, init workspace terraform plan: Dry run terraform code terraform apply: Create/update infrastructure resources defined in the code terraform destroy: Delete infrastructure resources Reference links: www.</description>
+    </item>
+    
+  </channel>
+</rss>

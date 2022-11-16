@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on </title>
+    <link>/docs/</link>
+    <description>Recent content in Docs on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/docs/page1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/page1/</guid>
+      <description>Set type to &amp;lsquo;docs&amp;rsquo; if you want to render page outside of configured section or if you render section other than &amp;lsquo;docs&amp;rsquo; type = &amp;lsquo;docs&amp;rsquo;
+Set page weight to re-arrange items in file-tree menu (if BookMenuBundle not set) weight = 10
+(Optional) Set to &amp;rsquo;true&amp;rsquo; to mark page as flat section in file-tree menu (if BookMenuBundle not set) bookFlatSection = false
+(Optional) Set to hide nested sections or pages at that level.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docs/page2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/page2/</guid>
+      <description>test2</description>
+    </item>
+    
+  </channel>
+</rss>
