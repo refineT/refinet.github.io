@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Terraform IaC :: </title>
+
+    
+    <link href="/css/nucleus.css?1668600090" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1668600090" rel="stylesheet">
+    <link href="/css/hybrid.css?1668600090" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1668600090" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1668600090" rel="stylesheet">
+    <link href="/css/auto-complete.css?1668600090" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1668600090" rel="stylesheet">
+    <link href="/css/theme.css?1668600090" rel="stylesheet">
+    <link href="/css/tabs.css?1668600090" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1668600090" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1668600090" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1668600090"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/basics/terraform/iac/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1668600090"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1668600090"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/refinet.github.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1668600090"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/basics/">
+          Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/terraform/" title="Terraform" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/basics/terraform/">
+          Terraform
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/terraform/iac/" title="Terraform IaC" class="dd-item active">
+        <a href="/basics/terraform/iac/">
+        Terraform IaC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/others/" title="Others" class="dd-item
+        
+        
+        
+        ">
+      <a href="/basics/others/">
+          Others
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/others/others/" title="Others" class="dd-item ">
+        <a href="/basics/others/others/">
+        Others
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/basics-sec-captical/" title="basics-sec-chapter" class="dd-item
+        
+        
+        
+        ">
+      <a href="/basics/basics-sec-captical/">
+          basics-sec-chapter
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/basics-sec-captical/basics_second_content/" title="basics_Second_content" class="dd-item ">
+        <a href="/basics/basics-sec-captical/basics_second_content/">
+        basics_Second_content
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/basics-sec-captical/basics_second_content2/" title="basics_Second_content2" class="dd-item ">
+        <a href="/basics/basics-sec-captical/basics_second_content2/">
+        basics_Second_content2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/projects/" title="Projects" class="dd-item
+        
+        
+        
+        ">
+      <a href="/projects/">
+          Projects
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/projects/dso/" title="DSO-chapter" class="dd-item
+        
+        
+        
+        ">
+      <a href="/projects/dso/">
+          DSO-chapter
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/projects/dso/dso_second_content/" title="DSO Second_content" class="dd-item ">
+        <a href="/projects/dso/dso_second_content/">
+        DSO Second_content
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>HomePage</a> > <a href='/basics/'>Basics</a> > <a href='/basics/terraform/'>Terraform</a> > Terraform IaC
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#reference-links">Reference links</a></li>
+        <li><a href="#terraform-project-structure">Terraform project structure</a></li>
+        <li><a href="#sourcecode">SourceCode</a></li>
+        <li><a href="#terraform-module-deployment">Terraform module deployment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Terraform IaC
+            </h1>
+          
+
+        
+
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#reference-links">Reference links</a></li>
+<li><a href="#terraform-project-structure">Terraform project structure</a></li>
+<li><a href="#sourcecode">SourceCode</a>
+<ul>
+<li><a href="#rootmodule">RootModule</a></li>
+<li><a href="#childmodule">ChildModule</a></li>
+</ul>
+</li>
+<li><a href="#terraform-module-deployment">Terraform module deployment</a></li>
+</ul>
+<h3 id="introduction">Introduction</h3>
+<p>Terraform is an open-source, infrastructure as code, software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.</p>
+<ul>
+<li><strong>terraform init</strong>: Download and install Terraform plugins and remote modules, init workspace</li>
+<li><strong>terraform plan</strong>: Dry run terraform code</li>
+<li><strong>terraform apply</strong>: Create/update infrastructure resources defined in the code</li>
+<li><strong>terraform destroy</strong>: Delete infrastructure resources</li>
+</ul>
+<h3 id="reference-links">Reference links</h3>
+<ul>
+<li><a href="https://www.terraform.io/language">www.terraform.io/language
+</a></li>
+<li><a href="https://registry.terraform.io/search/providers?namespace=hashicorp">registry.terraform.io/search/providers?namespace=hashicorp
+</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs">registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+</a></li>
+</ul>
+<h3 id="terraform-project-structure">Terraform project structure</h3>
+<pre tabindex="0"><code>wangliang@wanglwh macbook pro squad1_wangliang % tree
+.
+├── main.tf
+├── modules
+│   ├── Vnet
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── resourceGroup
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── securityGroup
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   └── subnet
+│       ├── main.tf
+│       ├── output.tf
+│       └── variables.tf
+├── output.tf
+├── terraform.tfstate.d
+│   ├── dev
+│   │   ├── terraform.tfstate
+│   │   └── terraform.tfstate.backup
+│   └── test
+│       ├── terraform.tfstate
+│       └── terraform.tfstate.backup
+├── variables
+│   ├── dev.tfvars
+│   └── test.tfvars
+└── variables.tf
+
+9 directories, 21 files
+</code></pre><p><img src="/terraform_project_structure.png" alt="Folder Structure"></p>
+<h3 id="sourcecode">SourceCode</h3>
+<h5 id="rootmodule">RootModule</h5>
+<ul>
+<li>main.tf</li>
+</ul>
+<pre tabindex="0"><code>terraform {
+  required_version = &#34;&gt;=0.12&#34;
+
+  required_providers {
+    azurerm = {
+      source  = &#34;hashicorp/azurerm&#34;
+      version = &#34;~&gt;2.0&#34;
+    }
+    random = {
+      source  = &#34;hashicorp/random&#34;
+      version = &#34;~&gt;3.0&#34;
+    }
+  }
+}
+
+# Configure the Microsoft Azure Provider
+provider &#34;azurerm&#34; {
+  features {}
+}
+
+module &#34;Azure_Module_RG&#34; {
+    source = &#34;./modules/resourceGroup&#34;
+    resource_group_name = var.resource_group_name
+    location = var.location
+    tags = var.tags
+}
+
+module &#34;Azure_Module_Vnet&#34; {
+    source = &#34;./modules/Vnet&#34;
+    resource_group_name = module.Azure_Module_RG.resource_group_name
+    location = var.location
+    vnet = var.vnet
+    tags = var.tags
+}
+
+module &#34;Azure_Module_Subnet&#34; {
+    source = &#34;./modules/subnet&#34;
+    resource_group_name = module.Azure_Module_RG.resource_group_name
+    location = var.location
+    virtual_network_name = module.Azure_Module_Vnet.vnet_name
+    subnet = var.subnet
+    tags = var.tags
+}
+
+module &#34;Azure_Module_NetworkSecurityGroup&#34; {
+    source = &#34;./modules/securityGroup&#34;
+    resource_group_name = module.Azure_Module_RG.resource_group_name
+    security_group_name = var.security_group_name
+    location = var.location
+    security_rule = var.security_rule
+    tags = var.tags
+}
+
+resource &#34;azurerm_virtual_network_peering&#34; &#34;peering-1&#34; {
+  name                      = &#34;WE-IAC-TF-D-PEER-VENT001toVNET002&#34;
+  resource_group_name       = module.Azure_Module_RG.resource_group_name
+  virtual_network_name      = module.Azure_Module_Vnet.vnet_name[0]
+  remote_virtual_network_id = module.Azure_Module_Vnet.vnet_id[1]
+}
+
+resource &#34;azurerm_virtual_network_peering&#34; &#34;peering-2&#34; {
+  name                      = &#34;WE-IAC-TF-D-PEER-VENT002toVNET001&#34;
+  resource_group_name       = module.Azure_Module_RG.resource_group_name 
+  virtual_network_name      = module.Azure_Module_Vnet.vnet_name[1]
+  remote_virtual_network_id = module.Azure_Module_Vnet.vnet_id[0]
+}
+</code></pre><ul>
+<li>variables.tf</li>
+</ul>
+<pre tabindex="0"><code>variable &#34;resource_group_name&#34; {
+    description = &#34;The name of the module demo resource group in which the resources will be created&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-RG&#34;
+}
+
+variable &#34;security_group_name&#34; {
+    description = &#34;security_group_name&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-NSG001&#34;
+}
+
+variable &#34;location&#34; {
+    description = &#34;The location where module demo resource group will be created&#34;
+    type = string
+    default = &#34;East Us&#34;
+}
+
+variable &#34;tags&#34; {
+    description = &#34;A map of the tags to use for the module demo resources that are deployed&#34;
+    type = map(string)
+    default = {
+        environment = &#34;Dev&#34;
+        Owner = &#34;wanglwh&#34;
+    }
+}
+
+variable &#34;vnet&#34; {
+    type = map(any)
+    description = &#34;vnet&#34;
+}
+
+variable &#34;subnet&#34; {
+    type = map(any)
+    description = &#34;subnet&#34;
+}
+
+
+variable &#34;security_rule&#34; {
+    type = map(any)
+    description = &#34;security_rule&#34;
+}
+</code></pre><ul>
+<li>variables/dev.tfvars</li>
+</ul>
+<pre tabindex="0"><code>resource_group_name = &#34;EU-IAC-TF-D-RG-alpha&#34;
+location = &#34;East Us&#34;
+tags = {environment = &#34;Dev-tfvars&#34;, Owner = &#34;wanglwh&#34;}
+security_group_name = &#34;EU-IAC-TF-D-NSG001-alpha&#34;
+
+vnet = {
+    vnet_1 = {
+        name = &#34;EU-IAC-TF-D-VNET001-alpha&#34;
+        location = &#34;East Us&#34;
+        address_space = [&#34;10.0.0.0/16&#34;]
+        subnet_name = &#34;EU-IAC-TF-D-VNET001-SNET001&#34;
+        subnet_address_prefix = &#34;10.0.1.0/24&#34;
+    }
+    vnet_2 = {
+        name = &#34;EU-IAC-TF-D-VNET002-alpha&#34;
+        location = &#34;East Us&#34;
+        address_space = [&#34;10.1.0.0/16&#34;]
+        subnet_name = &#34;EU-IAC-TF-D-VNET002-SNET001&#34;
+        subnet_address_prefix = &#34;10.1.1.0/24&#34;
+    }
+}    
+
+subnet = {
+    subnet_1 = {
+        subnet_name = &#34;EU-IAC-TF-D-VNET001-SNET001&#34;
+        subnet_address_prefix = &#34;10.0.2.0/24&#34;
+    }
+    subnet_2 = {
+        subnet_name = &#34;EU-IAC-TF-D-VNET002-SNET001&#34;
+        subnet_address_prefix = &#34;10.1.2.0/24&#34;
+    }
+}  
+
+security_rule = {
+    rule_1 = {
+        name                       = &#34;Allow_TCP_ANY_InBound-alpha&#34;
+        priority                   = 100
+        direction                  = &#34;Inbound&#34;
+        access                     = &#34;Allow&#34;
+        protocol                   = &#34;Tcp&#34;
+        source_port_range          = &#34;*&#34;
+        destination_port_range     = &#34;*&#34;
+        source_address_prefix      = &#34;*&#34;
+        destination_address_prefix = &#34;*&#34;
+    }
+    rule_2 = {
+        name                       = &#34;Allow_UDP_ANY_OutBound-alpha&#34;
+        priority                   = 100
+        direction                  = &#34;Outbound&#34;
+        access                     = &#34;Allow&#34;
+        protocol                   = &#34;Udp&#34;
+        source_port_range          = &#34;*&#34;
+        destination_port_range     = &#34;*&#34;
+        source_address_prefix      = &#34;*&#34;
+        destination_address_prefix = &#34;*&#34;
+    }
+}
+</code></pre><ul>
+<li>variables/test.tfvars</li>
+</ul>
+<pre tabindex="0"><code>resource_group_name = &#34;EU-IAC-TF-D-RG-beta&#34;
+location = &#34;East Us&#34;
+tags = {environment = &#34;Test-tfvars&#34;, Owner = &#34;wanglwh&#34;}
+security_group_name = &#34;EU-IAC-TF-D-NSG001-beta&#34;
+
+vnet = {
+    vnet_1 = {
+        name = &#34;EU-IAC-TF-D-VNET001-beta&#34;
+        location = &#34;East Us&#34;
+        address_space = [&#34;10.0.0.0/16&#34;]
+        subnet_name = &#34;EU-IAC-TF-D-VNET001-SNET001&#34;
+        subnet_address_prefix = &#34;10.0.1.0/24&#34;
+    }
+    vnet_2 = {
+        name = &#34;EU-IAC-TF-D-VNET002-beta&#34;
+        location = &#34;East Us&#34;
+        address_space = [&#34;10.1.0.0/16&#34;]
+        subnet_name = &#34;EU-IAC-TF-D-VNET002-SNET001&#34;
+        subnet_address_prefix = &#34;10.1.1.0/24&#34;
+    }
+}          
+
+security_rule = {
+    rule_1 = {
+        name                       = &#34;Allow_TCP_ANY_InBound-beta&#34;
+        priority                   = 100
+        direction                  = &#34;Inbound&#34;
+        access                     = &#34;Allow&#34;
+        protocol                   = &#34;Tcp&#34;
+        source_port_range          = &#34;*&#34;
+        destination_port_range     = &#34;*&#34;
+        source_address_prefix      = &#34;*&#34;
+        destination_address_prefix = &#34;*&#34;
+    }
+    rule_2 = {
+        name                       = &#34;Allow_UDP_ANY_OutBound-beta&#34;
+        priority                   = 100
+        direction                  = &#34;Outbound&#34;
+        access                     = &#34;Allow&#34;
+        protocol                   = &#34;Udp&#34;
+        source_port_range          = &#34;*&#34;
+        destination_port_range     = &#34;*&#34;
+        source_address_prefix      = &#34;*&#34;
+        destination_address_prefix = &#34;*&#34;
+    }
+}
+</code></pre><h5 id="childmodule">ChildModule</h5>
+<ul>
+<li>
+<p>/modules/resourceGroup</p>
+<ul>
+<li>main.tf
+<pre tabindex="0"><code>resource &#34;azurerm_resource_group&#34; &#34;rg&#34; {
+location = var.location
+name     = var.resource_group_name
+tags     = var.tags
+}    
+</code></pre></li>
+<li>variable.tf
+<pre tabindex="0"><code>variable &#34;resource_group_name&#34; {
+    description = &#34;The name of the module demo resource group in which the resources will be created&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-RG&#34;
+}
+
+variable &#34;location&#34; {
+    description = &#34;The location where module demo resource group will be created&#34;
+    type = string
+    default = &#34;East Us&#34;
+}
+
+variable &#34;tags&#34; {
+    description = &#34;A map of the tags to use for the module demo resources that are deployed&#34;
+    type = map(string)
+    default = {
+        environment = &#34;Dev&#34;
+        Owner = &#34;wanglwh&#34;
+    }
+}
+</code></pre></li>
+<li>output.tf
+<pre tabindex="0"><code>output &#34;resource_group_name&#34; {
+value = azurerm_resource_group.rg.name
+}
+
+output &#34;location&#34; {
+value = azurerm_resource_group.rg.location
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>/modules/securityGroup</p>
+<ul>
+<li>main.tf
+<pre tabindex="0"><code>resource &#34;azurerm_network_security_group&#34; &#34;sg&#34; {
+name                = var.security_group_name
+location            = var.location
+resource_group_name = var.resource_group_name
+
+for_each = var.security_rule
+security_rule {
+    name                       = each.value[&#34;name&#34;]
+    priority                   = each.value[&#34;priority&#34;]
+    direction                  = each.value[&#34;direction&#34;]
+    access                     = each.value[&#34;access&#34;]
+    protocol                   = each.value[&#34;protocol&#34;]
+    source_port_range          = each.value[&#34;source_port_range&#34;]
+    destination_port_range     = each.value[&#34;destination_port_range&#34;]
+    source_address_prefix      = each.value[&#34;source_address_prefix&#34;]
+    destination_address_prefix = each.value[&#34;destination_address_prefix&#34;]
+}
+
+tags = var.tags
+}
+</code></pre></li>
+<li>variable.tf
+<pre tabindex="0"><code>variable &#34;resource_group_name&#34; {
+    description = &#34;The name of the module demo resource group in which the resources will be created&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-RG&#34;
+}
+
+variable &#34;security_group_name&#34; {
+    description = &#34;The location where module demo security group will be created&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-NSG001&#34;
+}
+
+variable &#34;location&#34; {
+    description = &#34;The location where module demo resource group will be created&#34;
+    type = string
+    default = &#34;East Us&#34;
+}
+
+variable &#34;security_rule&#34; {
+    type = map(any)
+    default = {
+        rule_1 = {
+            name                       = &#34;Allow_TCP_ANY_InBound&#34;
+            priority                   = 100
+            direction                  = &#34;Inbound&#34;
+            access                     = &#34;Allow&#34;
+            protocol                   = &#34;Tcp&#34;
+            source_port_range          = &#34;*&#34;
+            destination_port_range     = &#34;*&#34;
+            source_address_prefix      = &#34;*&#34;
+            destination_address_prefix = &#34;*&#34;
+        }
+        rule_2 = {
+            name                       = &#34;Allow_UDP_ANY_OutBound&#34;
+            priority                   = 100
+            direction                  = &#34;Outbound&#34;
+            access                     = &#34;Allow&#34;
+            protocol                   = &#34;Udp&#34;
+            source_port_range          = &#34;*&#34;
+            destination_port_range     = &#34;*&#34;
+            source_address_prefix      = &#34;*&#34;
+            destination_address_prefix = &#34;*&#34;
+        }
+    }
+}
+
+variable &#34;tags&#34; {
+    description = &#34;A map of the tags to use for the module demo resources that are deployed&#34;
+    type = map(string)
+    default = {
+        environment = &#34;Dev&#34;
+        Owner = &#34;wanglwh@cn.ibm.com&#34;
+    }
+}
+</code></pre></li>
+<li>output.tf
+<pre tabindex="0"><code>output &#34;security_group_name_id&#34; {
+value = values(azurerm_network_security_group.sg)[*].id
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>/modules/Vnet</p>
+<ul>
+<li>main.tf
+<pre tabindex="0"><code>resource &#34;azurerm_virtual_network&#34; &#34;VNET&#34; {
+for_each = var.vnet
+name                = each.value[&#34;name&#34;]
+location            = var.location
+resource_group_name = var.resource_group_name
+address_space       = each.value[&#34;address_space&#34;]
+subnet {
+    name              = each.value[&#34;subnet_name&#34;]
+    address_prefix    = each.value[&#34;subnet_address_prefix&#34;]
+}  
+tags = var.tags  
+}
+</code></pre></li>
+<li>variable.tf
+<pre tabindex="0"><code>variable &#34;vnet&#34; {
+    type = map(any)
+    default = {
+        vnet_1 = {
+            name = &#34;EU-IAC-TF-D-VNET001&#34;
+            location = &#34;East Us&#34;
+            address_space = [&#34;10.0.0.0/16&#34;]
+            subnet_name = &#34;EU-IAC-TF-D-VNET001-SNET001&#34;
+            subnet_address_prefix = &#34;10.0.1.0/24&#34;
+        }
+        vnet_2 = {
+            name = &#34;EU-IAC-TF-D-VNET002&#34;
+            location = &#34;East Us&#34;
+            address_space = [&#34;10.1.0.0/16&#34;]
+            subnet_name = &#34;EU-IAC-TF-D-VNET002-SNET001&#34;
+            subnet_address_prefix = &#34;10.1.1.0/24&#34;
+        }
+    }
+}
+
+variable &#34;resource_group_name&#34; {
+    description = &#34;The name of the module demo resource group in which the resources will be created&#34;
+    type = string
+    default = &#34;EU-IAC-TF-D-RG&#34;
+}
+
+variable &#34;location&#34; {
+    description = &#34;The location where module demo resource group will be created&#34;
+    type = string
+    default = &#34;East Us&#34;
+}
+
+variable &#34;tags&#34; {
+    description = &#34;A map of the tags to use for the module demo resources that are deployed&#34;
+    type = map(string)
+    default = {
+        environment = &#34;Dev&#34;
+        Owner = &#34;wanglwh@cn.ibm.com&#34;
+    }
+}
+</code></pre></li>
+<li>output.tf
+<pre tabindex="0"><code>output &#34;vnet_id&#34; {
+value = values(azurerm_virtual_network.VNET)[*].id
+}
+
+output &#34;vnet_name&#34; {
+value = values(azurerm_virtual_network.VNET)[*].name
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>/modules/subnet</p>
+<ul>
+<li>main.tf
+<pre tabindex="0"><code>resource &#34;azurerm_subnet&#34; &#34;subnet&#34; {
+resource_group_name = var.resource_group_name
+count = length(var.virtual_network_name)
+virtual_network_name  = var.virtual_network_name[count.index]
+for_each = var.subnets
+name                 = each.value[&#34;subnet_name&#34;]
+address_prefixes     = each.value[&#34;subnet_address_prefix&#34;]
+tags = var.tags  
+}
+</code></pre></li>
+<li>variable.tf
+<pre tabindex="0"><code>variable &#34;resource_group_name&#34; {
+type        = string
+description = &#34;Name of the resource_group_name&#34;
+}
+
+variable &#34;location&#34; {
+type        = string
+description = &#34;Name of the location&#34;
+}
+
+variable &#34;tags&#34; {
+type = map(any)
+}
+
+variable &#34;subnets&#34; {
+type        = map(any)
+description = &#34;Subnets map&#34;
+}
+
+variable &#34;virtual_network_name&#34; {
+type        = list(string)
+description = &#34;virtual_network_name list&#34;
+}
+</code></pre></li>
+<li>output.tf
+<pre tabindex="0"><code>output &#34;vnet_name_out&#34; {
+    value = azurerm_virtual_network.vnet.name
+}
+output &#34;vnet_id_out&#34; {
+    value = azurerm_virtual_network.vnet.id
+}
+
+output &#34;azure_subnet_id&#34; {
+    value = {
+        for id in keys(var.subnets) : id =&gt; azurerm_subnet.subnet[id].id
+    }
+    description = &#34;Lists the ID&#39;s of the subnets&#34;
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="terraform-module-deployment">Terraform module deployment</h3>
+<ul>
+<li>Init terraform workspace dev/staging/prod<br>
+terraform workspace new dev/staging/prod<br>
+terraform workspace select dev<br>
+terraform init</li>
+<li>Plan cloud resource<br>
+terraform plan -var-file=&quot;./variables/dev.tfvars&quot;</li>
+<li>Create/update cloud resources<br>
+terraform apply -var-file=&quot;./variables/dev.tfvars&quot;</li>
+<li>Destroy and delete cloud resource<br>
+terraform destroy -var-file=&quot;./variables/dev.tfvars&quot;</li>
+</ul>
+<p><img src="/terraform-deployment.png" alt="Terraform deployment"></p>
+<p><a href="#table-of-contents">Back to top</a></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/basics/terraform/" title="Terraform"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/basics/others/" title="Others" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1668600090"></script>
+    <script src="/js/perfect-scrollbar.min.js?1668600090"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1668600090"></script>
+    <script src="/js/jquery.sticky.js?1668600090"></script>
+    <script src="/js/featherlight.min.js?1668600090"></script>
+    <script src="/js/highlight.pack.js?1668600090"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1668600090"></script>
+    <script src="/js/learn.js?1668600090"></script>
+    <script src="/js/hugo-learn.js?1668600090"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1668600090"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
