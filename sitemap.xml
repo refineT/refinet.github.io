@@ -2,13 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://refinet.github.io/basics/network/</loc>
+    <lastmod>2022-11-11T17:49:10+08:00</lastmod>
+  </url><url>
     <loc>https://refinet.github.io/basics/terraform/</loc>
-    <lastmod>2022-11-11T17:49:10+08:00</lastmod>
-  </url><url>
-    <loc>https://refinet.github.io/basics/others/</loc>
-    <lastmod>2022-11-11T17:49:10+08:00</lastmod>
-  </url><url>
-    <loc>https://refinet.github.io/basics/basics-sec-captical/</loc>
     <lastmod>2022-11-11T17:49:10+08:00</lastmod>
   </url><url>
     <loc>https://refinet.github.io/basics/</loc>
@@ -20,19 +17,16 @@
     <loc>https://refinet.github.io/projects/</loc>
     <lastmod>2022-11-11T17:41:42+08:00</lastmod>
   </url><url>
-    <loc>https://refinet.github.io/basics/basics-sec-captical/basics_second_content/</loc>
-    <lastmod>2022-11-11T17:49:27+08:00</lastmod>
-  </url><url>
-    <loc>https://refinet.github.io/basics/basics-sec-captical/basics_second_content2/</loc>
+    <loc>https://refinet.github.io/projects/dso/dso/</loc>
     <lastmod>2022-11-11T17:49:27+08:00</lastmod>
   </url><url>
     <loc>https://refinet.github.io/projects/dso/dso_second_content/</loc>
     <lastmod>2022-11-11T17:49:27+08:00</lastmod>
   </url><url>
-    <loc>https://refinet.github.io/basics/others/others/</loc>
+    <loc>https://refinet.github.io/basics/terraform/iac/</loc>
     <lastmod>2022-11-11T17:49:27+08:00</lastmod>
   </url><url>
-    <loc>https://refinet.github.io/basics/terraform/iac/</loc>
+    <loc>https://refinet.github.io/basics/network/network/</loc>
     <lastmod>2022-11-11T17:49:27+08:00</lastmod>
   </url><url>
     <loc>https://refinet.github.io/projects/dso/</loc>
