@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HomePage on </title>
+    <link>https://refinet.github.io/</link>
+    <description>Recent content in HomePage on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Nov 2022 17:41:42 +0800</lastBuildDate><atom:link href="https://refinet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform IaC</title>
+      <link>https://refinet.github.io/basics/terraform/iac/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/terraform/iac/</guid>
+      <description>Table of Contents Introduction Reference links Terraform project structure SourceCode RootModule ChildModule Terraform module deployment Introduction Terraform is an open-source, infrastructure as code, software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
+terraform init: Download and install Terraform plugins and remote modules, init workspace terraform plan: Dry run terraform code terraform apply: Create/update infrastructure resources defined in the code terraform destroy: Delete infrastructure resources Reference links www.</description>
+    </item>
+    
+    <item>
+      <title>路由交换</title>
+      <link>https://refinet.github.io/basics/network/network/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/network/network/</guid>
+      <description>Table of Contents 路由分类 动态配置命令 vlan间路由 单臂路由 三层交换机路由交换 交换机管理vlan etherchannel 路由分类 - 静态路由 - 动态路由协议 内部网关协议: 距离矢量协议：RIPv2 EIGRP 链路状态协议：OSPF ISIS 外部网关协议：BGP 动态配置命令 RIP Router(config)#router rip #启动RIP路由选择进程 #RIP AD值120 Router(config-router)#network network-number #宣告网段，network-number是路由器接口直连的网段，如192.168.10.0 #RIP只支持主类网络宣告 Example: 1.1.1.1/24 192.168.12.0/24 192.168.23.0/24 3.3.3.3/24 ------------R1-----------------R2-----------------R3------------ R1: router rip network 1.0.0.0 network 192.168.12.0 R2: router rip network 192.168.12.0 network 192.168.23.0 R3: router rip network 192.168.23.0 network 3.0.0.0/24 OSPF Router(config)#router ospf process-id #开启OSPF进程 #OSPF AD值110 Router(config-router)#network address wildcard-mask area area-id #宣告特定的网络到OSPF区域 Example1: --------------------area 0------------------ | | | 192.</description>
+    </item>
+    
+  </channel>
+</rss>

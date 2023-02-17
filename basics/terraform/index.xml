@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terraform on </title>
+    <link>https://refinet.github.io/basics/terraform/</link>
+    <description>Recent content in Terraform on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Nov 2022 17:49:10 +0800</lastBuildDate><atom:link href="https://refinet.github.io/basics/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform IaC</title>
+      <link>https://refinet.github.io/basics/terraform/iac/</link>
+      <pubDate>Fri, 11 Nov 2022 17:49:27 +0800</pubDate>
+      
+      <guid>https://refinet.github.io/basics/terraform/iac/</guid>
+      <description>Table of Contents Introduction Reference links Terraform project structure SourceCode RootModule ChildModule Terraform module deployment Introduction Terraform is an open-source, infrastructure as code, software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
+terraform init: Download and install Terraform plugins and remote modules, init workspace terraform plan: Dry run terraform code terraform apply: Create/update infrastructure resources defined in the code terraform destroy: Delete infrastructure resources Reference links www.</description>
+    </item>
+    
+  </channel>
+</rss>
